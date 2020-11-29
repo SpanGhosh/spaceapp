@@ -1,0 +1,17 @@
+<div class="filter-header">Filters</div>
+<div class="launch">Launch Year</div>
+<div class="year-list row">
+  <button class="col-4 filter-button btn" *ngFor="let year of years" 
+  [routerLink]="['/filter',year]" routerLinkActive="linkactive">{{year}}</button>
+</div>
+<div class="launch">Successful Launch</div>
+<div class="row s-launch">
+  <button class="col-4 filter-button btn" [routerLink]="['/filter','launch-t']" routerLinkActive="linkactive">True</button>
+  <button class="col-4 filter-button btn" [routerLink]="['/filter','launch-f']" routerLinkActive="linkactive">False</button>
+</div>
+<div class="launch">Successful Landing</div>
+<div class="row s-landing">
+  <button class="col-4 filter-button btn" [routerLink]="['/filter','land-t']" routerLinkActive="linkactive">True</button>
+  <button class="col-4 filter-button btn" [routerLink]="['/filter','land-f']" routerLinkActive="linkactive">False</button>
+</div>
+

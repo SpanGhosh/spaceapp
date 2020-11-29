@@ -1,0 +1,32 @@
+.year-list,.s-launch,.s-landing{
+  padding: 1rem;
+  justify-content: space-around;
+}
+.filter-button{
+  text-align: center;
+  background-color: lightgreen;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+  height: 2rem;
+}
+.filter-button:nth-child(odd){
+  margin-right: 1rem;
+}
+.filter-button:nth-child(even){
+  margin-left: 1rem;
+}
+.btn:active,.btn:focus{
+  background-color: darkgreen;
+}
+.linkactive{
+  background-color: darkgreen;
+}
+.filter-header{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.launch{
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 1rem;
+}

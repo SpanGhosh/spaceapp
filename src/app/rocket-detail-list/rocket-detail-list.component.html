@@ -1,0 +1,23 @@
+<div class="rocket-container">
+  <ng-container *ngFor="let data of rocketData">
+    <div class="card">
+      <img class="card-img-top" src="{{data.links.mission_patch_small}}">
+      <div class="rocket-name">{{data.mission_name}} #{{data.flight_number}}</div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Mission ids
+          <ul>
+            <li *ngFor="let id of data.mission_id" class="list-value">{{id}}</li>
+          </ul>
+        </li>
+        <li class="list-group-item">Launch Year : <span class="list-value">{{data.launch_year}}</span></li>
+        <li class="list-group-item">Succesful Launch : <span class="list-value">{{data.launch_success}}</span></li>
+        <li class="list-group-item">Successful Landing
+          <ul>
+            <li class="list-value" *ngFor="let landing of data.rocket.first_stage.cores">{{landing.land_success}}</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </ng-container>
+</div>
+

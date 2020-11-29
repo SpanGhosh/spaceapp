@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+rocket-detail-list{
+  width: 80%;
+}
+@media screen and (max-width: 700px){
+  rocket-detail-list{
+    width: 100%;
+  }
+}
